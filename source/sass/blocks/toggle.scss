@@ -1,0 +1,64 @@
+.toggle {
+  display: none;
+
+  @include vp-1199 {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 26px;
+    min-height: 26px;
+    padding: 9px;
+    color: $color-default-white;
+    background-color: $color-transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: color $trans-default;
+
+    &.is-opened {
+      padding: 11px;
+    }
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+
+  @include disabled {
+    opacity: 0.1;
+  }
+}
+
+.toggle .toggle__closed {
+  display: none;
+  opacity: 0;
+  animation: opacity $trans-ease-in;
+}
+
+.toggle.is-opened .toggle__opened {
+  display: none;
+}
+
+.toggle.is-opened .toggle__closed {
+  display: inline;
+  color: $color-default-elephant;
+  opacity: 1;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+
+  @include disabled {
+    opacity: 0.1;
+  }
+}

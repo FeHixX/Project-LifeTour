@@ -1,0 +1,132 @@
+.nav {
+  @include vp-1199 {
+    position: absolute;
+    top: 0;
+    right: 150vw;
+    left: -100vw;
+    padding: 115px 35px 59px;
+    background-color: $color-default-white;
+    transition: all $trans-default;
+
+    &::before {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      background-color: rgba($color-default-black, 0.5);
+      opacity: 0;
+      transition: opacity $trans-default;
+      inset: 0;
+    }
+
+    &.is-opened {
+      right: 0;
+      left: 0;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 89px 5px 40px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 710px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 5px 12px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 6px 0;
+  }
+
+  @include vp-767 {
+    gap: 2px 0;
+  }
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+  padding: 10px;
+  font-style: normal;
+  line-height: 16px;
+  color: $color-default-white;
+  outline: none;
+  transition: color $trans-default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    transition: background-color $trans-default;
+  }
+
+  @include vp-1199 {
+    font-weight: 700;
+    color: $color-default-elephant;
+    text-transform: uppercase;
+    letter-spacing: 0.64px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  @include hover {
+    &::before {
+      bottom: 8px;
+      left: 5px;
+      width: calc(100% - 10px);
+      height: 1px;
+      background-color: $color-default-white;
+    }
+  }
+
+  @include focus {
+    &::before {
+      top: 6px;
+      left: 5px;
+      width: calc(100% - 10px);
+      height: calc(100% - 14px);
+      border: 1px solid $color-default-white;
+      animation: opacity $trans-default;
+    }
+  }
+
+  @include active {
+    &::before {
+      background-color: $color-transparent;
+    }
+  }
+
+  @include disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.nav.is-opened .nav__link {
+  @include vp-1199 {
+    @include hover {
+      &::before {
+        background-color: $color-default-elephant;
+      }
+    }
+
+    @include focus {
+      &::before {
+        border: 1px solid $color-default-elephant;
+      }
+    }
+  }
+}

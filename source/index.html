@@ -22,24 +22,88 @@
 
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__container container">
+          <button class="header__toggle toggle" type="button" aria-label="Нажмите чтобы открыть меню.">
+            <svg class="toggle__opened" width="26" height="26" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#menu"></use>
+            </svg>
+            <svg class="toggle__closed" width="22" height="22" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <a class="header__logo-link" href="#!" aria-label="Логотип сайта LifeTour.">
+            <svg class="header__logo-image" width="205" height="62" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#tours">Туры</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#training">Обучение</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <a class="header__tel" href="tel:88007253232">8 800 725 32 32</a>
+          </div>
+        </div>
       </header>
 
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
+      <main class="main">
+        <section class="hero" id="hero">
+          <h1 class="visually-hidden">Организация походов в&nbsp;горы: LifeTour.</h1>
+          <div class="hero__container container"></div>
+        </section>
+        <section class="tours" id="tours">
+          <div class="tours__container container"></div>
+        </section>
+        <section class="training" id="training">
+          <div class="training__container container"></div>
+        </section>
+        <section class="about" id="about">
+          <div class="about__container container"></div>
+        </section>
+        <section class="reviews" id="reviews">
+          <div class="reviews__container container"></div>
+        </section>
+        <section class="advantages" id="advantages">
+          <div class="advantages__container container"></div>
+        </section>
+        <section class="gallery" id="gallery">
+          <div class="gallery__container container"></div>
+        </section>
+        <section class="feedback">
+          <div class="feedback__container container"></div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="contacts__container container"></div>
         </section>
       </main>
 
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <a class="footer__logo-link" href="#!">
+            <svg class="footer__logo-image" width="205" height="60" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
       </footer>
     </div>
 
