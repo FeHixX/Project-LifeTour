@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./favicon/apple.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="preload" href="./fonts/montserrat-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <meta name="description" content="вершины Кавказа, природа Камчатки, Алтайский край, тур, горы, поход">
+    <title>Путешествия</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+
   <body>
     <div class="wrapper">
       <header>
         <div class="container"></div>
       </header>
+
       <main>
         <section class="intro">
           <div class="container">
@@ -24,41 +37,14 @@
           </div>
         </section>
       </main>
+
       <footer>
         <div class="container"></div>
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
+
 </html>
