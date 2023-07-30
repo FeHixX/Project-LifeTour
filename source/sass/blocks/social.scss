@@ -1,0 +1,40 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid rgba($color-default-elephant, 0.3);
+  outline: none;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    border-color: $color-default-elephant;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-navy-blue;
+    border-color: $color-navy-blue;
+  }
+
+  @include disabled {
+    color: rgba($color-default-elephant, 0.3);
+    border-color: rgba($color-default-elephant, 0.3);
+    pointer-events: none;
+  }
+}
+
+.social__icon {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}

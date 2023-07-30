@@ -11,6 +11,16 @@
   color: $color-default-white;
   transition: color $trans-default;
 
+  &::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    background-color: rgba($color-default-black, 0.5);
+    opacity: 0;
+    transition: opacity $trans-default;
+    inset: 0;
+  }
+
   @include vp-1199 {
     position: relative;
     padding-top: 30px;
@@ -18,6 +28,10 @@
 
     &.is-opened {
       color: $color-default-elephant;
+
+      &::before {
+        opacity: 1;
+      }
     }
   }
 
@@ -41,11 +55,11 @@
   }
 
   @include vp-767 {
-    transform: translate(-9px, -16px);
+    transform: translate(-9px, -15px);
     grid-area: 1/1/3/2;
 
     &.is-opened {
-      transform: translate(-11px, -18px);
+      transform: translate(-11px, -17px);
     }
   }
 }
@@ -53,24 +67,15 @@
 .header__logo-link {
   color: inherit;
   outline: none;
-  transition: color $trans-default;
 
   @include vp-1199 {
-    z-index: 1;
+    z-index: 2;
     margin-left: 81px;
   }
 
   @include vp-767 {
     margin-left: 0;
     grid-area: 1/2/2/3;
-  }
-
-  @include hover-focus {
-    color: $color-resolution-blue;
-  }
-
-  @include active {
-    color: $color-navy-blue;
   }
 }
 
@@ -112,19 +117,17 @@
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: 1px 0 0;
     grid-area: 2/2/3/3;
   }
 }
 
 .header__tel {
-  padding: 5px 0;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
   color: inherit;
   outline: none;
-  transition: color $trans-default;
 
   @include vp-1199 {
     z-index: 1;
@@ -133,21 +136,7 @@
   }
 
   @include vp-767 {
-    padding: 1px 0;
     font-size: 14px;
     line-height: 14px;
-  }
-
-  @include hover-focus {
-    color: $color-resolution-blue;
-  }
-
-  @include active {
-    color: $color-navy-blue;
-  }
-
-  @include disabled {
-    opacity: 0.15;
-    pointer-events: none;
   }
 }
