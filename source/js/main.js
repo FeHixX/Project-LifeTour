@@ -3,7 +3,8 @@ import {Form} from './modules/form-validate/form';
 
 import {addToggleMenu} from './modules/menu/toggle';
 import {addHeroSlider} from './modules/hero/slider';
-import {addVideoPlayer} from './modules/hero/player';
+import {addVideoPlayer} from './modules/hero/video';
+import {addAudioPlayer} from './modules/hero/audio';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addToggleMenu();
     addHeroSlider();
     addVideoPlayer();
+    addAudioPlayer();
   });
 });
 

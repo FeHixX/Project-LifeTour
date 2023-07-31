@@ -5,6 +5,12 @@
   color: $color-resolution-blue;
   background-color: rgba($color-ghost-white, 0.9);
   border: 2px solid $color-default-white;
+
+  &--play {
+    padding: 0;
+    background-color: $color-transparent;
+    border: none;
+  }
 }
 
 .audio__top {
