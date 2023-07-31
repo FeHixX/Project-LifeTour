@@ -1,17 +1,17 @@
 .nav {
+  z-index: 2;
+
   @include vp-1199 {
     position: absolute;
-    top: 0;
-    right: 200vw;
-    left: -200vw;
+    top: -200vh;
+    right: 0;
+    left: 0;
     padding: 120px 40px 64px;
     background-color: $color-default-white;
-    transition: all $trans-default;
-    z-index: 1;
+    transition: top $trans-default;
 
     &.is-opened {
-      right: 0;
-      left: 0;
+      top: 0;
     }
   }
 

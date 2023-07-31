@@ -22,7 +22,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header header--first-slide">
         <div class="header__container container">
           <button class="header__toggle toggle" type="button" aria-label="Нажмите чтобы открыть меню.">
             <svg class="toggle__opened" width="26" height="26" aria-hidden="true" focusable="false">
@@ -63,13 +63,190 @@
             <a class="header__tel link-secondary" href="tel:88007253232">8 800 725 32 32</a>
           </div>
         </div>
+        <section class="hero">
+          <h1 class="visually-hidden">Туристическое агентство: LifeTour.</h1>
+          <div class="hero__container container">
+            <div class="hero__swiper swiper-hero">
+              <ul class="hero__list swiper-wrapper">
+                <li class="hero__item swiper-slide">
+                  <div class="hero__body">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                  </div>
+                  <a class="hero__button button" href="#!">Смотреть тур</a>
+                  <ul class="hero__details-list">
+                    <li class="hero__details-item">
+                      <svg class="hero__details-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      6&nbsp;дней/5 ночей
+                    </li>
+                    <li class="hero__details-item">
+                      <svg class="hero__details-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Высокая сложность
+                    </li>
+                  </ul>
+                  <div class="hero__video video">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/first-slide/poster-tablet@1x.webp, ./img/hero/first-slide/poster-tablet@2x.webp 2x" width="442" height="300">
+                      <source type="image/webp" srcset="./img/hero/first-slide/poster-desktop@1x.webp, ./img/hero/first-slide/poster-desktop@2x.webp 2x" width="482" height="317">
+                      <source media="(max-width: 1199px)" srcset="./img/hero/first-slide/poster-tablet@1x.jpg, ./img/hero/first-slide/poster-tablet@2x.jpg 2x" width="442" height="300">
+                      <img src="./img/hero/first-slide/poster-desktop@1x.jpg" srcset="./img/hero/first-slide/poster-desktop@2x.jpg 2x" width="482" height="317" alt="Постер: человек в синей курткее, стоящий на горе.">
+                    </picture>
+                    <button class="video__button" type="button" aria-label="Воспроизвести видео." data-src="https://www.youtube.com/embed/9TZXsZItgdw">
+                      <svg class="video__icon" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#play-video"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <div class="hero__body">
+                    <h2>Невероятная природа Камчатки</h2>
+                    <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                  </div>
+                  <a class="hero__button button" href="#!">Смотреть тур</a>
+                  <ul class="hero__details-list">
+                    <li class="hero__details-item">
+                      <svg class="hero__details-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      9&nbsp;дней/10 ночей
+                    </li>
+                    <li class="hero__details-item">
+                      <svg class="hero__details-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Средняя сложность
+                    </li>
+                  </ul>
+                  <div class="hero__photo">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/second-slide/cards-tablet@1x.webp, ./img/hero/second-slide/cards-tablet@2x.webp 2x" width="442" height="365">
+                      <source type="image/webp" srcset="./img/hero/second-slide/cards-desktop@1x.webp, ./img/hero/second-slide/cards-desktop@2x.webp 2x" width="410" height="459">
+                      <source media="(max-width: 1199px)" srcset="./img/hero/second-slide/cards-tablet@1x.png, ./img/hero/second-slide/cards-tablet@2x.png 2x" width="442" height="365">
+                      <img src="./img/hero/second-slide/cards-desktop@1x.png" srcset="./img/hero/second-slide/cards-desktop@2x.png 2x" width="410" height="459" alt="Коллаж из двух фотографий.">
+                    </picture>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <div class="hero__body">
+                    <h2>Магические пейзажи Алтайского Края</h2>
+                    <p>Алтайский трекинг-тур&nbsp;&mdash; это&nbsp;захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                  </div>
+                  <a class="hero__button button" href="#!">Смотреть тур</a>
+                  <ul class="hero__details-list">
+                    <li class="hero__details-item">
+                      <svg class="hero__details-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      8&nbsp;дней/7 ночей
+                    </li>
+                    <li class="hero__details-item">
+                      <svg class="hero__details-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Легкая сложность
+                    </li>
+                  </ul>
+                  <div class="hero__audio audio">
+                    <div class="audio__top">
+                      <div class="audio__text">
+                        <p class="audio__name">Алтай</p>
+                        <p class="audio__band">Lifetour</p>
+                      </div>
+                      <div class="audio__buttons-top">
+                        <button class="audio__button" type="button" aria-label="Поставить лайк.">
+                          <svg width="17" height="17" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                        <button class="audio__button" type="button" aria-label="Поделиться.">
+                          <svg width="17" height="17" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="audio__slider">
+                      <span class="audio__passed-line" style="width: 56.5%;">
+                        <button class="audio__point" type="button"></button></span>
+                    </div>
+                    <div class="audio__metadata">
+                      <span class="audio__passed">2:30</span>
+                      <span class="audio__duration">4:16</span>
+                    </div>
+                    <div class="audio__buttons-bottom">
+                      <button class="audio__button" type="button" aria-label="Перемешать и воспроизвести.">
+                        <svg width="25" height="25" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#shuffle"></use>
+                        </svg>
+                      </button>
+                      <div class="audio__buttons-center">
+                        <button class="audio__button" type="button" aria-label="Предыдущая аудиозапись.">
+                          <svg width="22" height="22" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#prev"></use>
+                          </svg>
+                        </button>
+                        <button class="audio__button" type="button" aria-label="Воспроизвести.">
+                          <svg width="47" height="47" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#play-audio"></use>
+                          </svg>
+                        </button>
+                        <button class="audio__button" type="button" aria-label="Следующая аудиозапись.">
+                          <svg width="22" height="22" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#next"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="audio__button" type="button" aria-label="Повторять.">
+                        <svg width="25" height="25" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#repeat"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="hero__pagination"></div>
+            </div>
+          </div>
+        </section>
+        <div class="header__first-background">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/first-slide/background-mobile@1x.webp, ./img/hero/first-slide/background-mobile@2x.webp 2x" width="320" height="568">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/first-slide/background-tablet@1x.webp, ./img/hero/first-slide/background-tablet@2x.webp 2x" width="768" height="1024">
+            <source type="image/webp" srcset="./img/hero/first-slide/background-desktop@1x.webp, ./img/hero/first-slide/background-desktop@2x.webp 2x" width="1440" height="800">
+            <source media="(max-width: 767px)" srcset="./img/hero/first-slide/background-mobile@1x.jpg, ./img/hero/first-slide/background-mobile@2x.jpg 2x" width="320" height="568">
+            <source media="(max-width: 1199px)" srcset="./img/hero/first-slide/background-tablet@1x.jpg, ./img/hero/first-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
+            <img src="./img/hero/first-slide/background-desktop@1x.jpg" srcset="./img/hero/first-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Гора с облаками в небе.">
+          </picture>
+        </div>
+        <div class="header__second-background">
+          <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/second-slide/background-mobile@1x.webp, ./img/hero/second-slide/background-mobile@2x.webp 2x" width="320" height="568">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/second-slide/background-tablet@1x.webp, ./img/hero/second-slide/background-tablet@2x.webp 2x" width="768" height="1024">
+          <source type="image/webp" srcset="./img/hero/second-slide/background-desktop@1x.webp, ./img/hero/second-slide/background-desktop@2x.webp 2x" width="1440" height="800">
+          <source media="(max-width: 767px)" srcset="./img/hero/second-slide/background-mobile@1x.jpg, ./img/hero/second-slide/background-mobile@2x.jpg 2x" width="320" height="568">
+          <source media="(max-width: 1199px)" srcset="./img/hero/second-slide/background-tablet@1x.jpg, ./img/hero/second-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
+          <img src="./img/hero/second-slide/background-desktop@1x.jpg" srcset="./img/hero/second-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Горный хребет с облаками.">
+        </picture>
+        </div>
+        <div class="header__third-background">
+          <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/third-slide/background-mobile@1x.webp, ./img/hero/third-slide/background-mobile@2x.webp 2x" width="320" height="568">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/third-slide/background-tablet@1x.webp, ./img/hero/third-slide/background-tablet@2x.webp 2x" width="768" height="1024">
+          <source type="image/webp" srcset="./img/hero/third-slide/background-desktop@1x.webp, ./img/hero/third-slide/background-desktop@2x.webp 2x" width="1440" height="800">
+          <source media="(max-width: 767px)" srcset="./img/hero/third-slide/background-mobile@1x.jpg, ./img/hero/third-slide/background-mobile@2x.jpg 2x" width="320" height="568">
+          <source media="(max-width: 1199px)" srcset="./img/hero/third-slide/background-tablet@1x.jpg, ./img/hero/third-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
+          <img src="./img/hero/third-slide/background-desktop@1x.jpg" srcset="./img/hero/third-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Река, протекающая через долину.">
+        </picture>
+        </div>
       </header>
 
       <main class="main">
-        <section class="hero" id="hero">
-          <h1 class="visually-hidden">Организация походов в&nbsp;горы: LifeTour.</h1>
-          <div class="hero__container container"></div>
-        </section>
         <section class="tours" id="tours">
           <div class="tours__container container"></div>
         </section>
@@ -159,7 +336,6 @@
       </footer>
     </div>
 
-    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 

@@ -1,5 +1,56 @@
 .header {
+  position: relative;
   background-color: $color-polo-blue;
+
+  &--first-slide {
+    .header__first-background {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &--second-slide {
+    .header__second-background {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &--third-slide {
+    .header__third-background {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.header__first-background,
+.header__second-background,
+.header__third-background {
+  position: absolute;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity $trans-ease-in;
+  inset: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: $gradient-overlay;
+    inset: 0;
+  }
+
+  picture {
+    display: flex;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: fill;
+  }
 }
 
 .header__container {
@@ -14,11 +65,12 @@
   &::before {
     content: "";
     position: fixed;
-    z-index: -1;
+    z-index: 2;
     background-color: rgba($color-default-black, 0.5);
     opacity: 0;
     transition: opacity $trans-default;
     inset: 0;
+    transform: scale(0);
   }
 
   @include vp-1199 {
@@ -31,6 +83,7 @@
 
       &::before {
         opacity: 1;
+        transform: scale(1);
       }
     }
   }
@@ -65,11 +118,11 @@
 }
 
 .header__logo-link {
+  z-index: 3;
   color: inherit;
   outline: none;
 
   @include vp-1199 {
-    z-index: 2;
     margin-left: 81px;
   }
 
@@ -102,6 +155,7 @@
 }
 
 .header__right {
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;

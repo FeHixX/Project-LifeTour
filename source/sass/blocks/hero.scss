@@ -1,0 +1,247 @@
+.hero {
+  color: $color-default-white;
+}
+
+.hero__container {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  @include vp-1199 {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  @include vp-767 {
+    padding-top: 54px;
+    padding-bottom: 40px;
+  }
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1199 {
+    padding: 0 0 79px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 112px;
+  }
+}
+
+.hero__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero__body {
+  max-width: 921px;
+  margin: 0 -61px 37px 0;
+  grid-area: 1/1/2/2;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 0 27px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 21px;
+  }
+}
+
+.hero__body h2 {
+  margin: 0 0 23px;
+  font-weight: 800;
+  font-size: 77px;
+  line-height: 77px;
+
+  @include vp-1199 {
+    margin: 0 0 13px;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.hero__body p {
+  max-width: 465px;
+  margin-top: 0;
+  font-size: 17px;
+  line-height: 24px;
+
+  @include vp-1199 {
+    max-width: 68%;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    max-width: 98%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.hero__body > *:last-child {
+  margin: 0;
+}
+
+.hero__button {
+  margin: 0 0 150px;
+  grid-area: 2/1/3/2;
+  justify-self: start;
+
+  @include vp-1199 {
+    margin: 0 0 50px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.hero__details-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 10px;
+  grid-area: 3/1/4/2;
+}
+
+.hero__details-item {
+  position: relative;
+  padding: 13px 20px 13px 39px;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid rgba($color-default-white, 0.5);
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.hero__details-icon {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 19px;
+  margin: auto;
+}
+
+.hero__video,
+.hero__photo,
+.hero__audio {
+  z-index: -1;
+  align-self: start;
+  grid-area: 1/2/4/3;
+  justify-self: end;
+
+  @include vp-1199 {
+    align-self: stretch;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__video {
+  margin: 119px 0 0;
+
+  @include vp-1199 {
+    margin: 0 calc(17% + 3px);
+  }
+}
+
+.hero__photo {
+  margin: 20px 0 0;
+
+  @include vp-1199 {
+    margin: -16px calc(17% + 3px) 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.hero__audio {
+  margin: 119px 0 0;
+
+  @include vp-1199 {
+    align-self: center;
+    margin: 19px 0 0;
+  }
+}
+
+.hero__swiper {
+  position: relative;
+}
+
+.hero__swiper > .hero__pagination {
+  position: absolute;
+  bottom: 17px;
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+  gap: 0 15px;
+
+  @include vp-1199 {
+    bottom: 0;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    gap: 0 12px;
+  }
+}
+
+.hero__swiper > .hero__pagination .hero__pagination-button {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: $color-transparent;
+  border: 1px solid $color-default-white;
+  outline: none;
+  opacity: 1;
+  transition: all $trans-default;
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    opacity: 0.4;
+  }
+
+  @include active {
+    opacity: 0.7;
+  }
+}
+
+.hero__swiper > .hero__pagination .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
+}

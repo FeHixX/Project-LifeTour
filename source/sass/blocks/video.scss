@@ -1,0 +1,68 @@
+.video {
+  position: relative;
+
+  img {
+    height: 317px;
+    object-fit: cover;
+  }
+
+  iframe {
+    width: 482px;
+    height: 317px;
+  }
+
+  @include vp-1199 {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+.video .video__button {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+  color: $color-default-white;
+  background-color: rgba($color-default-white, 0.2);
+  border: 1px solid $color-default-white;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all $trans-default;
+  inset: 0;
+
+  @include hover-focus {
+    background-color: $color-transparent;
+    border-color: $color-resolution-blue;
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+}
+
+.video__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 5px;
+  margin: auto;
+}
+
+.video__button:hover .video__icon {
+  transition: stroke $trans-default;
+  stroke: $color-default-black;
+}
+
+.video__button:active .video__icon {
+  stroke: none;
+}

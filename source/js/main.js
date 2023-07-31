@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 
 import {addToggleMenu} from './modules/menu/toggle';
+import {addHeroSlider} from './modules/hero/slider';
+import {addVideoPlayer} from './modules/hero/player';
 
 // ---------------------------------
 
@@ -23,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
 
     addToggleMenu();
+    addHeroSlider();
+    addVideoPlayer();
   });
 });
 

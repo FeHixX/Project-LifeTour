@@ -1,0 +1,123 @@
+.audio {
+  width: 340px;
+  height: auto;
+  padding: 39px 38px 38px;
+  color: $color-resolution-blue;
+  background-color: rgba($color-ghost-white, 0.9);
+  border: 2px solid $color-default-white;
+}
+
+.audio__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0 0 13px;
+}
+
+.audio__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px 0;
+}
+
+.audio__name {
+  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.audio__band {
+  margin: 0;
+  font-size: 14px;
+  line-height: normal;
+  opacity: 0.48;
+}
+
+.audio__buttons-top {
+  display: flex;
+  align-items: end;
+  margin: 0 0 1px;
+  gap: 0 14px;
+}
+
+.audio__button {
+  display: inline-block;
+  padding: 0;
+  color: $color-resolution-blue;
+  background-color: $color-transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    color: $color-navy-blue;
+  }
+
+  @include active {
+    color: $color-midnight-express;
+  }
+}
+
+.audio__button svg {
+  display: block;
+}
+
+.audio__slider {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin: 0 0 8px;
+  background-color: rgba($color-resolution-blue, 0.4);
+}
+
+.audio__passed-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: rgba($color-midnight-express, 0.7);
+}
+
+.audio__point {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: $color-resolution-blue;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    background-color: $color-navy-blue;
+  }
+
+  @include active {
+    background-color: $color-midnight-express;
+  }
+}
+
+.audio__metadata {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 13px;
+  font-size: 10px;
+  line-height: normal;
+}
+
+.audio__buttons-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audio__buttons-center {
+  display: flex;
+  gap: 0 15px;
+}

@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+  padding: 22px 54px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all $trans-default;
+
+  @include vp-1199 {
+    padding: 22px 47px 20px;
+  }
+
+  @include vp-767 {
+    padding: 19px 34px 17px;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    box-shadow: inset 0 0 0 1px $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  @include disabled {
+    background-color: rgba($color-navy-blue, 0.2);
+    pointer-events: none;
+  }
+}
