@@ -1,11 +1,12 @@
 import Swiper from '../../vendor/swiper';
+import {isMobile} from '../../utils/is-mobile';
 
 const addHeroSlider = () => {
   if (document.querySelector('.hero__slider')) {
     const classSliders = ['first', 'second', 'third'];
 
     const swiper = new Swiper('.hero__slider', {
-      grabCursor: true,
+      allowTouchMove: isMobile(),
       speed: 300,
       effect: 'fade',
       fadeEffect: {

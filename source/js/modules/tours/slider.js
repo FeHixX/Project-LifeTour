@@ -1,9 +1,10 @@
 import Swiper from '../../vendor/swiper';
+import {isMobile} from '../../utils/is-mobile';
 
 const addToursSlider = () => {
   if (document.querySelector('.tours__slider')) {
     const swiper = new Swiper('.tours__slider', {
-      grabCursor: true,
+      allowTouchMove: isMobile(),
       breakpoints: {
         0: {
           slidesPerView: 1,
