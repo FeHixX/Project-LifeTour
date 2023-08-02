@@ -1,4 +1,5 @@
 .link-secondary {
+  outline: none;
   transition: color $trans-default;
 
   @include hover-focus {

@@ -66,7 +66,7 @@
         <section class="hero">
           <h1 class="visually-hidden">Туристическое агентство: LifeTour.</h1>
           <div class="hero__container container">
-            <div class="hero__swiper swiper-hero">
+            <div class="hero__slider swiper">
               <ul class="hero__list swiper-wrapper">
                 <li class="hero__item swiper-slide">
                   <div class="hero__body">
@@ -226,50 +226,386 @@
         </div>
         <div class="header__second-background">
           <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/second-slide/background-mobile@1x.webp, ./img/hero/second-slide/background-mobile@2x.webp 2x" width="320" height="568">
-          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/second-slide/background-tablet@1x.webp, ./img/hero/second-slide/background-tablet@2x.webp 2x" width="768" height="1024">
-          <source type="image/webp" srcset="./img/hero/second-slide/background-desktop@1x.webp, ./img/hero/second-slide/background-desktop@2x.webp 2x" width="1440" height="800">
-          <source media="(max-width: 767px)" srcset="./img/hero/second-slide/background-mobile@1x.jpg, ./img/hero/second-slide/background-mobile@2x.jpg 2x" width="320" height="568">
-          <source media="(max-width: 1199px)" srcset="./img/hero/second-slide/background-tablet@1x.jpg, ./img/hero/second-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
-          <img src="./img/hero/second-slide/background-desktop@1x.jpg" srcset="./img/hero/second-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Горный хребет с облаками.">
-        </picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/second-slide/background-mobile@1x.webp, ./img/hero/second-slide/background-mobile@2x.webp 2x" width="320" height="568">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/second-slide/background-tablet@1x.webp, ./img/hero/second-slide/background-tablet@2x.webp 2x" width="768" height="1024">
+            <source type="image/webp" srcset="./img/hero/second-slide/background-desktop@1x.webp, ./img/hero/second-slide/background-desktop@2x.webp 2x" width="1440" height="800">
+            <source media="(max-width: 767px)" srcset="./img/hero/second-slide/background-mobile@1x.jpg, ./img/hero/second-slide/background-mobile@2x.jpg 2x" width="320" height="568">
+            <source media="(max-width: 1199px)" srcset="./img/hero/second-slide/background-tablet@1x.jpg, ./img/hero/second-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
+            <img src="./img/hero/second-slide/background-desktop@1x.jpg" srcset="./img/hero/second-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Горный хребет с облаками.">
+          </picture>
         </div>
         <div class="header__third-background">
           <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/third-slide/background-mobile@1x.webp, ./img/hero/third-slide/background-mobile@2x.webp 2x" width="320" height="568">
-          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/third-slide/background-tablet@1x.webp, ./img/hero/third-slide/background-tablet@2x.webp 2x" width="768" height="1024">
-          <source type="image/webp" srcset="./img/hero/third-slide/background-desktop@1x.webp, ./img/hero/third-slide/background-desktop@2x.webp 2x" width="1440" height="800">
-          <source media="(max-width: 767px)" srcset="./img/hero/third-slide/background-mobile@1x.jpg, ./img/hero/third-slide/background-mobile@2x.jpg 2x" width="320" height="568">
-          <source media="(max-width: 1199px)" srcset="./img/hero/third-slide/background-tablet@1x.jpg, ./img/hero/third-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
-          <img src="./img/hero/third-slide/background-desktop@1x.jpg" srcset="./img/hero/third-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Река, протекающая через долину.">
-        </picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/third-slide/background-mobile@1x.webp, ./img/hero/third-slide/background-mobile@2x.webp 2x" width="320" height="568">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/third-slide/background-tablet@1x.webp, ./img/hero/third-slide/background-tablet@2x.webp 2x" width="768" height="1024">
+            <source type="image/webp" srcset="./img/hero/third-slide/background-desktop@1x.webp, ./img/hero/third-slide/background-desktop@2x.webp 2x" width="1440" height="800">
+            <source media="(max-width: 767px)" srcset="./img/hero/third-slide/background-mobile@1x.jpg, ./img/hero/third-slide/background-mobile@2x.jpg 2x" width="320" height="568">
+            <source media="(max-width: 1199px)" srcset="./img/hero/third-slide/background-tablet@1x.jpg, ./img/hero/third-slide/background-tablet@2x.jpg 2x" width="768" height="1024">
+            <img src="./img/hero/third-slide/background-desktop@1x.jpg" srcset="./img/hero/third-slide/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Река, протекающая через долину.">
+          </picture>
         </div>
       </header>
 
       <main class="main">
         <section class="tours" id="tours">
-          <div class="tours__container container"></div>
+          <div class="tours__container container">
+            <div class="tours__top">
+              <h2 class="tours__title title" data-shadow="Ближайшие туры">Ближайшие туры</h2>
+              <div class="tours__arrows arrows">
+                <button class="tours__prev arrow" type="button" aria-label="Предыдущий слайд.">
+                  <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                    <use href="./img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="tours__next arrow" type="button" aria-label="Следующий слайд.">
+                  <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                    <use href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="tours__slider swiper">
+              <ul class="tours__list swiper-wrapper">
+                <li class="tours__item swiper-slide">
+                  <h3 class="tours__subitle">Путешествие вокруг Эльбруса</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/caucasus-mobile@1x.webp, ./img/tours/caucasus-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/caucasus-tablet@1x.webp, ./img/tours/caucasus-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="./img/tours/caucasus-desktop@1x.webp, ./img/tours/caucasus-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="./img/tours/caucasus-mobile@1x.jpg, ./img/tours/caucasus-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="./img/tours/caucasus-tablet@1x.jpg, ./img/tours/caucasus-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="./img/tours/caucasus-desktop@1x.jpg" srcset="./img/tours/caucasus-desktop@2x.jpg 2x" width="380" height="412" alt="Река, протекающая через долину с горами на заднем плане.">
+                  </picture>
+                  <div class="tours__detalis-top">
+                    <p class="tours__place">
+                      <svg width="9" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      Кавказ
+                    </p>
+                    <p class="tours__days">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      <span class="tours__days-text">4&nbsp;дня</span>
+                    </p>
+                    <p class="tours__nigts">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <span class="tours__nigts-text">3&nbsp;ночи</span>
+                    </p>
+                  </div>
+                  <div class="tours__detalis-bottom">
+                    <p class="tours__complexity">Сложность:
+                      <span class="visually-hidden">3 из 5</span>
+                      <span class="tours__stars">
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                      </span>
+                    </p>
+                    <p class="tours__date">Даты набора:
+                      <span class="tours__text">12.06-19.06</span>
+                    </p>
+                    <p class="tours__group">Группа:
+                      <span class="tours__text">до&nbsp;15&nbsp;чел.</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <h3 class="tours__subitle">Путь к&nbsp;подножию Белухи</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/altai-mobile@1x.webp, ./img/tours/altai-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/altai-tablet@1x.webp, ./img/tours/altai-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="./img/tours/altai-desktop@1x.webp, ./img/tours/altai-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="./img/tours/altai-mobile@1x.jpg, ./img/tours/altai-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="./img/tours/altai-tablet@1x.jpg, ./img/tours/altai-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="./img/tours/altai-desktop@1x.jpg" srcset="./img/tours/altai-desktop@2x.jpg 2x" width="380" height="412" alt="Река, окруженная горами.">
+                  </picture>
+                  <div class="tours__detalis-top">
+                    <p class="tours__place">
+                      <svg width="9" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      Алтай
+                    </p>
+                    <p class="tours__days">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      <span class="tours__days-text">14&nbsp;дней</span>
+                    </p>
+                    <p class="tours__nigts">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <span class="tours__nigts-text">13&nbsp;ночей</span>
+                    </p>
+                  </div>
+                  <div class="tours__detalis-bottom">
+                    <p class="tours__complexity">Сложность:
+                      <span class="visually-hidden">2 из 5</span>
+                      <span class="tours__stars">
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                      </span>
+                    </p>
+                    <p class="tours__date">Даты набора:
+                      <span class="tours__text">14.06-23.06</span>
+                    </p>
+                    <p class="tours__group">Группа:
+                      <span class="tours__text">до&nbsp;25&nbsp;чел.</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <h3 class="tours__subitle">Через Фишт к&nbsp;Черному морю</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/adygea-mobile@1x.webp, ./img/tours/adygea-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/adygea-tablet@1x.webp, ./img/tours/adygea-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="./img/tours/adygea-desktop@1x.webp, ./img/tours/adygea-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="./img/tours/adygea-mobile@1x.jpg, ./img/tours/adygea-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="./img/tours/adygea-tablet@1x.jpg, ./img/tours/adygea-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="./img/tours/adygea-desktop@1x.jpg" srcset="./img/tours/adygea-desktop@2x.jpg 2x" width="380" height="412" alt="Река, протекающая через долину с горами на заднем плане.">
+                  </picture>
+                  <div class="tours__detalis-top">
+                    <p class="tours__place">
+                      <svg width="9" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      Адыгея
+                    </p>
+                    <p class="tours__days">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      <span class="tours__days-text">7&nbsp;дней</span>
+                    </p>
+                    <p class="tours__nigts">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <span class="tours__nigts-text">6&nbsp;ночей</span>
+                    </p>
+                  </div>
+                  <div class="tours__detalis-bottom">
+                    <p class="tours__complexity">Сложность:
+                      <span class="visually-hidden">3 из 5</span>
+                      <span class="tours__stars">
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                      </span>
+                    </p>
+                    <p class="tours__date">Даты набора:
+                      <span class="tours__text">15.07-19.07</span>
+                    </p>
+                    <p class="tours__group">Группа:
+                      <span class="tours__text">до&nbsp;22&nbsp;чел.</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <h3 class="tours__subitle">Путешествие вокруг Эльбруса</h3>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/caucasus-mobile@1x.webp, ./img/tours/caucasus-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/caucasus-tablet@1x.webp, ./img/tours/caucasus-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="./img/tours/caucasus-desktop@1x.webp, ./img/tours/caucasus-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="./img/tours/caucasus-mobile@1x.jpg, ./img/tours/caucasus-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="./img/tours/caucasus-tablet@1x.jpg, ./img/tours/caucasus-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="./img/tours/caucasus-desktop@1x.jpg" srcset="./img/tours/caucasus-desktop@2x.jpg 2x" width="380" height="412" alt="Река, протекающая через долину с горами на заднем плане.">
+                  </picture>
+                  <div class="tours__detalis-top">
+                    <p class="tours__place">
+                      <svg width="9" height="12" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#pin"></use>
+                      </svg>
+                      Кавказ
+                    </p>
+                    <p class="tours__days">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      <span class="tours__days-text">4&nbsp;дня</span>
+                    </p>
+                    <p class="tours__nigts">
+                      <svg width="20" height="20" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <span class="tours__nigts-text">3&nbsp;ночи</span>
+                    </p>
+                  </div>
+                  <div class="tours__detalis-bottom">
+                    <p class="tours__complexity">Сложность:
+                      <span class="visually-hidden">3 из 5</span>
+                      <span class="tours__stars">
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#full-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                        <svg width="15" height="14" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#empty-star"></use>
+                        </svg>
+                      </span>
+                    </p>
+                    <p class="tours__date">Даты набора:
+                      <span class="tours__text">12.06-19.06</span>
+                    </p>
+                    <p class="tours__group">Группа:
+                      <span class="tours__text">до&nbsp;15&nbsp;чел.</span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="tours__link link-secondary" href="#!">
+              Показать все туры
+              <svg class="tours__link-icon" width="9" height="14" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#right"></use>
+              </svg>
+            </a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/clouds/clouds-mountain-tours-mobile@1x.webp, ./img/clouds/clouds-mountain-tours-mobile@2x.webp 2x" width="176" height="595">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/clouds/clouds-mountain-tours-tablet@1x.webp, ./img/clouds/clouds-mountain-tours-tablet@2x.webp 2x" width="294" height="1364">
+            <source type="image/webp" srcset="./img/clouds/clouds-mountain-tours-desktop@1x.webp, ./img/clouds/clouds-mountain-tours-desktop@2x.webp 2x" width="602" height="1364">
+            <source media="(max-width: 767px)" srcset="./img/clouds/clouds-mountain-tours-mobile@1x.png, ./img/clouds/clouds-mountain-tours-mobile@2x.png 2x" width="176" height="595">
+            <source media="(max-width: 1199px)" srcset="./img/clouds/clouds-mountain-tours-tablet@1x.png, ./img/clouds/clouds-mountain-tours-tablet@2x.png 2x" width="294" height="1364">
+            <img src="./img/clouds/clouds-mountain-tours-desktop@1x.png" srcset="./img/clouds/clouds-mountain-tours-desktop@2x.png 2x" width="602" height="1364" alt="Гора с облаками в небе.">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./img/clouds/clouds-tours@1x.webp, ./img/clouds/clouds-tours@2x.webp 2x" width="418" height="279">
+            <img src="./img/clouds/clouds-tours@1x.png" srcset="./img/clouds/clouds-tours@2x.png 2x" width="418" height="279" alt="Облако.">
+          </picture>
         </section>
         <section class="training" id="training">
-          <div class="training__container container"></div>
+          <div class="training__container container">
+            <h2 class="training__title title" data-shadow="Обучение">Обучение</h2>
+            <div class="training__arrows arrow">
+              <button class="arrow__prev" type="button" aria-label="Предыдущий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="arrow__next" type="button" aria-label="Следующий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </section>
         <section class="about" id="about">
-          <div class="about__container container"></div>
+          <div class="about__container container">
+            <h2 class="about__title title" data-shadow="О нас">О нас</h2>
+          </div>
         </section>
         <section class="reviews" id="reviews">
-          <div class="reviews__container container"></div>
+          <div class="reviews__container container">
+            <h2 class="reviews__title title" data-shadow="Отзывы">Отзывы</h2>
+            <div class="reviews__arrows arrow">
+              <button class="arrow__prev" type="button" aria-label="Предыдущий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="arrow__next" type="button" aria-label="Следующий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </section>
         <section class="advantages" id="advantages">
-          <div class="advantages__container container"></div>
+          <div class="advantages__container container">
+            <h2 class="advantages__title title" data-shadow="Преимущества">Преимущества</h2>
+            <div class="advantages__arrows arrow">
+              <button class="arrow__prev" type="button" aria-label="Предыдущий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="arrow__next" type="button" aria-label="Следующий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </section>
         <section class="gallery" id="gallery">
-          <div class="gallery__container container"></div>
+          <div class="gallery__container container">
+            <h2 class="gallery__title title" data-shadow="Фотогалерея">Фотогалерея</h2>
+            <div class="gallery__arrows arrow">
+              <button class="arrow__prev" type="button" aria-label="Предыдущий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="arrow__next" type="button" aria-label="Следующий слайд.">
+                <svg class="arrow__icon" width="14" height="8" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </section>
         <section class="feedback">
-          <div class="feedback__container container"></div>
+          <div class="feedback__container container">
+            <h2 class="feedback__title title title--secondary">Остались вопросы?</h2>
+          </div>
         </section>
         <section class="contacts" id="contacts">
-          <div class="contacts__container container"></div>
+          <div class="contacts__container container">
+            <h2 class="contacts__title title" data-shadow="Контакты">Контакты</h2>
+          </div>
         </section>
       </main>
 

@@ -5,6 +5,7 @@ import {addToggleMenu} from './modules/menu/toggle';
 import {addHeroSlider} from './modules/hero/slider';
 import {addVideoPlayer} from './modules/hero/video';
 import {addAudioPlayer} from './modules/hero/audio';
+import {addToursSlider} from './modules/tours/slider';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addHeroSlider();
     addVideoPlayer();
     addAudioPlayer();
+    addToursSlider();
   });
 });
 

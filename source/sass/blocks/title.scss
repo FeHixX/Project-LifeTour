@@ -1,0 +1,43 @@
+.title {
+  position: relative;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
+
+  &--secondary {
+    color: $color-default-white;
+  }
+
+  &::before {
+    content: attr(data-shadow);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: max-content;
+    font-size: 55px;
+    line-height: 55px;
+    opacity: 0.03;
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+
+    &::before {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    &::before {
+      top: 0;
+      bottom: auto;
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}

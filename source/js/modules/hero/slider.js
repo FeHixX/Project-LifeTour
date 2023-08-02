@@ -1,10 +1,10 @@
 import Swiper from '../../vendor/swiper';
 
 const addHeroSlider = () => {
-  if (document.querySelector('.swiper-hero')) {
+  if (document.querySelector('.hero__slider')) {
     const classSliders = ['first', 'second', 'third'];
 
-    const swiper = new Swiper('.swiper-hero', {
+    const swiper = new Swiper('.hero__slider', {
       grabCursor: true,
       speed: 300,
       effect: 'fade',

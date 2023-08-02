@@ -38,7 +38,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: $gradient-overlay;
+    background-image: $gradient-overlay-0;
     inset: 0;
   }
 
@@ -120,7 +120,6 @@
 .header__logo-link {
   z-index: 3;
   color: inherit;
-  outline: none;
 
   @include vp-1199 {
     margin-left: 81px;
@@ -181,7 +180,6 @@
   font-size: 18px;
   line-height: 18px;
   color: inherit;
-  outline: none;
 
   @include vp-1199 {
     z-index: 1;

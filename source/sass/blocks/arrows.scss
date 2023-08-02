@@ -1,0 +1,40 @@
+.arrows {
+  display: flex;
+  gap: 0 4px;
+}
+
+.arrow {
+  position: relative;
+  display: block;
+  width: 37px;
+  height: 35px;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+  border: 1px solid $color-transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+    border-color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  @include disabled {
+    color: $color-default-white;
+    background-color: rgba($color-navy-blue, 0.2);
+    pointer-events: none;
+  }
+}
+
+.arrow__icon {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}

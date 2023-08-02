@@ -195,11 +195,11 @@
   }
 }
 
-.hero__swiper {
+.hero__slider {
   position: relative;
 }
 
-.hero__swiper > .hero__pagination {
+.hero__slider > .hero__pagination {
   position: absolute;
   bottom: 17px;
   z-index: 1;
@@ -217,7 +217,7 @@
   }
 }
 
-.hero__swiper > .hero__pagination .hero__pagination-button {
+.hero__slider > .hero__pagination .hero__pagination-button {
   width: 10px;
   height: 10px;
   margin: 0;
@@ -242,6 +242,6 @@
   }
 }
 
-.hero__swiper > .hero__pagination .swiper-pagination-bullet-active {
+.hero__slider > .hero__pagination .swiper-pagination-bullet-active {
   background-color: $color-default-white;
 }
