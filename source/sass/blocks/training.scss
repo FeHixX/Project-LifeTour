@@ -1,0 +1,257 @@
+.training__container {
+  padding-top: 62px;
+  padding-bottom: 44px;
+
+  @include vp-1199 {
+    padding-top: 46px;
+    padding-bottom: 35px;
+  }
+
+  @include vp-767 {
+    padding-top: 27px;
+    padding-bottom: 8px;
+  }
+}
+
+.training__title {
+  margin: 0 0 32px;
+
+  @include vp-1199 {
+    margin: 0 0 21px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 16px;
+  }
+}
+
+.training__body-text {
+  max-width: 820px;
+  margin: 0 0 56px;
+
+  @include vp-1199 {
+    max-width: 80%;
+    margin: 0 0 66px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    margin: 0 0 49px;
+  }
+}
+
+.training__body-text p {
+  margin-top: 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.training__body-text > *:last-child {
+  margin: 0;
+}
+
+.training__instructors {
+  margin: 0 0 51px;
+
+  @include vp-1199 {
+    margin: 0 0 44px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 38px;
+  }
+}
+
+.training__subtitle {
+  margin: 0 0 41px;
+
+  @include vp-767 {
+    margin: 0 0 28px 4px;
+  }
+}
+
+.training__process-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 50px 30px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include vp-1199 {
+    gap: 90px 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    gap: 25px 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.training__process-body {
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin: 0 0 41px;
+  gap: 0 15px;
+  grid-template-columns: 25px auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -41px;
+    width: 14px;
+    height: 14px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -34px;
+    left: -30px;
+    height: 1px;
+    background-color: rgba($color-navy-blue, 0.1);
+  }
+
+  &--map {
+    &::after {
+      left: -50vw;
+    }
+  }
+
+  &--mountain {
+    &::after {
+      right: -50vw;
+    }
+  }
+
+  @include vp-1199 {
+    margin: 0;
+
+    svg {
+      margin: 0 0 3px;
+    }
+
+    &--map {
+      &::before {
+        bottom: -23px;
+      }
+
+      &::after {
+        right: -37px;
+        bottom: -16px;
+        left: 0;
+      }
+    }
+
+    &--boots {
+      &::before {
+        bottom: -23px;
+      }
+
+      &::after {
+        right: auto;
+        bottom: -73px;
+        left: 6px;
+        width: 1px;
+        height: 60px;
+      }
+    }
+
+    &--pine-tree {
+      order: 1;
+
+      &::before {
+        top: -27px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--mountain {
+      &::before {
+        top: -27px;
+      }
+
+      &::after {
+        top: -20px;
+        right: -37px;
+        left: 0;
+        height: 1px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    margin: 0 0 0 37px;
+    gap: 0 6px;
+
+    &::before {
+      top: 50%;
+      left: -33px;
+      width: 13px;
+      height: 13px;
+      transform: translateY(calc(-50% + 2px));
+    }
+
+    &::after {
+      top: -13px;
+      right: 0;
+      bottom: -13px;
+      left: -27px;
+      width: 1px;
+      height: auto;
+    }
+
+    svg {
+      width: 19px;
+      height: 19px;
+      margin: 0 0 3px;
+    }
+
+    &--pine-tree {
+      order: 0;
+
+      &::after {
+        display: block;
+      }
+    }
+
+    &:first-child::after {
+      top: 50%;
+    }
+
+    &:last-child::after {
+      bottom: 50%;
+    }
+  }
+}
+
+.training__process-body p {
+  margin-top: 0;
+
+  @include vp-1199 {
+    max-width: 70%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    max-width: 85%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.training__process-body > *:last-child {
+  margin: 0;
+}
