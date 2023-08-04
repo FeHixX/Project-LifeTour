@@ -1,8 +1,8 @@
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px + 2 * $padding-desktop;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 $padding-desktop;
 
   @include vp-1199 {
     padding: 0 $padding-tablet;

@@ -1,10 +1,10 @@
 .training__container {
   padding-top: 62px;
-  padding-bottom: 44px;
+  padding-bottom: 62px;
 
   @include vp-1199 {
     padding-top: 46px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
   }
 
   @include vp-767 {
@@ -67,9 +67,19 @@
 
 .training__subtitle {
   margin: 0 0 41px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+  }
 
   @include vp-767 {
     margin: 0 0 28px 4px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
