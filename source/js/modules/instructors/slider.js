@@ -22,7 +22,6 @@ const addInstructorsSlider = () => {
         prevEl: '.instructors__prev',
       },
     });
-
     return swiper;
   }
   return null;

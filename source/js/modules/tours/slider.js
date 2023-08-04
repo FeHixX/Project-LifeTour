@@ -24,7 +24,6 @@ const addToursSlider = () => {
         prevEl: '.tours__prev',
       },
     });
-
     return swiper;
   }
   return null;

@@ -7,6 +7,7 @@ import {addVideoPlayer} from './modules/hero/video';
 import {addAudioPlayer} from './modules/hero/audio';
 import {addToursSlider} from './modules/tours/slider';
 import {addInstructorsSlider} from './modules/instructors/slider';
+import {addReviewsSlider} from './modules/reviews/slider';
 
 // ---------------------------------
 
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addAudioPlayer();
     addToursSlider();
     addInstructorsSlider();
+    addReviewsSlider();
   });
 });
 

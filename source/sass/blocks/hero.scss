@@ -42,7 +42,7 @@
   }
 }
 
-.hero__body {
+.hero__body-text {
   max-width: 921px;
   margin: 0 -71px 37px 0;
   grid-area: 1/1/2/2;
@@ -60,7 +60,7 @@
   }
 }
 
-.hero__body h2 {
+.hero__body-text h2 {
   margin: 0 0 23px;
   font-weight: 800;
   font-size: 77px;
@@ -79,7 +79,7 @@
   }
 }
 
-.hero__body p {
+.hero__body-text p {
   max-width: 465px;
   margin-top: 0;
   font-size: 17px;
@@ -99,7 +99,7 @@
   }
 }
 
-.hero__body > *:last-child {
+.hero__body-text > *:last-child {
   margin: 0;
 }
 

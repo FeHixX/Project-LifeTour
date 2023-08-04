@@ -1,0 +1,144 @@
+.reviews__container {
+  padding-top: 61px;
+  padding-bottom: 66px;
+
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
+  @include vp-767 {
+    padding-top: 36px;
+    padding-bottom: 33px;
+  }
+}
+
+.reviews__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 27px;
+
+  @include vp-767 {
+    margin: 0 0 30px;
+  }
+}
+
+.reviews__arrows {
+  margin: -13px 0 0;
+
+  @include vp-1199 {
+    margin: -15px 0 0;
+  }
+
+  @include vp-767 {
+    margin: -11px 0 0;
+  }
+}
+
+.reviews__slider {
+  overflow: visible;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__item {
+  display: flex;
+  max-width: 790px;
+  padding: 20px 40px 20px 20px;
+  box-shadow: $shadow-cards;
+  gap: 0 30px;
+
+  picture {
+    flex-shrink: 0;
+  }
+
+  img {
+    width: 258px;
+    height: 253px;
+    object-fit: cover;
+  }
+
+  @include vp-1199 {
+    max-width: 560px;
+    padding-right: 30px;
+
+    img {
+      width: 186px;
+      height: 237px;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px 20px 19px;
+    gap: 16px 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0 16px;
+
+  @include vp-1199 {
+    padding: 3px 0 2px;
+  }
+}
+
+.reviews__body-text {
+  margin: 0 0 26px;
+
+  @include vp-767 {
+    margin: 0 0 16px;
+  }
+}
+
+.reviews__body-text p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.reviews__body-text > *:last-child {
+  margin: 0;
+}
+
+.reviews__info {
+  margin: auto 0 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.reviews__name {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+
+  @include vp-1199 {
+    margin: 0 0 7px;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  @include vp-767 {
+    line-height: 12px;
+  }
+}

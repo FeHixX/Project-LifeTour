@@ -142,7 +142,7 @@
   }
 }
 
-.instructors__body p {
+.instructors__body-text p {
   margin-top: 0;
   font-size: 12px;
   line-height: 16px;
@@ -152,6 +152,6 @@
   }
 }
 
-.instructors__body > *:last-child {
+.instructors__body-text > *:last-child {
   margin: 0;
 }
