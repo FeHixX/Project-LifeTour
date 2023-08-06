@@ -17,5 +17,4 @@ const addReviewsSlider = () => {
   return null;
 };
 
-
 export {addReviewsSlider};

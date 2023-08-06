@@ -18,5 +18,4 @@ const addToggleMenu = () => {
   });
 };
 
-
 export {addToggleMenu};

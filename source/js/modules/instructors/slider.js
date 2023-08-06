@@ -27,5 +27,4 @@ const addInstructorsSlider = () => {
   return null;
 };
 
-
 export {addInstructorsSlider};

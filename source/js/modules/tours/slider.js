@@ -29,5 +29,4 @@ const addToursSlider = () => {
   return null;
 };
 
-
 export {addToursSlider};

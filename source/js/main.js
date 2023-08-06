@@ -9,6 +9,7 @@ import {addToursSlider} from './modules/tours/slider';
 import {addInstructorsSlider} from './modules/instructors/slider';
 import {addReviewsSlider} from './modules/reviews/slider';
 import {addAdvantagesSlider} from './modules/advantages/slider';
+import {addGallerySlider} from './modules/gallery/slider';
 
 // ---------------------------------
 
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addInstructorsSlider();
     addReviewsSlider();
     addAdvantagesSlider();
+    addGallerySlider();
   });
 });
 
