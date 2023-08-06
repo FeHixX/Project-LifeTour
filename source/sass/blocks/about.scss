@@ -1,31 +1,31 @@
 .about {
   position: relative;
 
-  picture {
+  > picture {
     position: absolute;
-    top: 26px;
+    bottom: -8px;
     left: 0;
     z-index: -1;
   }
 
-  picture + picture {
+  > picture + picture {
     top: -140px;
     right: 0;
     left: auto;
   }
 
   @include vp-1199 {
-    picture {
-      top: 52px;
+    > picture {
+      bottom: 99px;
     }
 
-    picture + picture {
+    > picture + picture {
       display: none;
     }
   }
 
   @include vp-767 {
-    picture {
+    > picture {
       top: 9px;
     }
   }

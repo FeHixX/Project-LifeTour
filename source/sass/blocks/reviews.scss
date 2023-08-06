@@ -1,6 +1,23 @@
+.reviews {
+  position: relative;
+
+  > picture {
+    position: absolute;
+    bottom: -218px;
+    left: 0;
+    z-index: -1;
+  }
+
+  @include vp-1199 {
+    > picture {
+      display: none;
+    }
+  }
+}
+
 .reviews__container {
   padding-top: 61px;
-  padding-bottom: 66px;
+  padding-bottom: 68px;
 
   @include vp-1199 {
     padding-top: 45px;
@@ -9,7 +26,7 @@
 
   @include vp-767 {
     padding-top: 36px;
-    padding-bottom: 33px;
+    padding-bottom: 25px;
   }
 }
 
@@ -75,7 +92,7 @@
   @include vp-767 {
     flex-direction: column;
     max-width: 100%;
-    padding: 20px 20px 19px;
+    padding: 20px 20px 18px;
     gap: 16px 0;
 
     img {
@@ -139,6 +156,7 @@
   }
 
   @include vp-767 {
+    margin: 0 0 8px;
     line-height: 12px;
   }
 }
