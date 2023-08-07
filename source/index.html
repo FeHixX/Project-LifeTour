@@ -979,8 +979,35 @@
         </section>
         <section class="feedback">
           <div class="feedback__container container">
-            <h2 class="feedback__title title title--secondary">Остались вопросы?</h2>
+            <h2 class="feedback__title title">Остались вопросы?</h2>
+            <div class="feedback__body-text">
+              <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+            </div>
+            <div class="feedback__form" data-form-validate="data-form-validate" data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate="">
+                <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="">
+                  <label>
+                    <span class="custom-input__label">Введите ваше имя.</span>
+                    <input id="name" type="text" name="name" pattern="^[а-яА-ЯёЁa-zA-Z]+$" placeholder="Как к вам обращаться?" required="">
+                  </label>
+                </div>
+                <div class="custom-input" data-validate-type="phone" data-matrix-limitations="digit" data-phone-length="18" data-required="">
+                  <label>
+                    <span class="custom-input__label">Введите ваш номер телефона.</span>
+                    <input id="tel" type="tel" name="tel" pattern="^(\+)|[\d\s]+$" minlength="11" placeholder="Телефон" required=""></label>
+                </div>
+                <button class="feedback__button button" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/feedback/background-mobile@1x.webp, ./img/feedback/background-mobile@2x.webp 2x" width="320" height="621">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/feedback/background-tablet@1x.webp, ./img/feedback/background-tablet@2x.webp 2x" width="768" height="679">
+            <source type="image/webp" srcset="./img/feedback/background-desktop@1x.webp, ./img/feedback/background-desktop@2x.webp 2x" width="1440" height="800">
+            <source media="(max-width: 767px)" srcset="./img/feedback/background-mobile@1x.jpg, ./img/feedback/background-mobile@2x.jpg 2x" width="320" height="621">
+            <source media="(max-width: 1199px)" srcset="./img/feedback/background-tablet@1x.jpg, ./img/feedback/background-tablet@2x.jpg 2x" width="768" height="679">
+            <img src="./img/feedback/background-desktop@1x.jpg" srcset="./img/feedback/background-desktop@2x.jpg 2x" width="1440" height="800" alt="Фон: деревья в снегу.">
+          </picture>
         </section>
         <section class="contacts" id="contacts">
           <div class="contacts__container container">

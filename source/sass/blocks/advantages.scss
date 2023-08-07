@@ -63,6 +63,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    // to remove dynamic attribute styles in swiper
+    /* stylelint-disable declaration-no-important */
+    transform: translate3d(0,0,0) !important;
+    /* stylelint-enable declaration-no-important */
     gap: 30px;
   }
 

@@ -23,7 +23,7 @@ const addAdvantagesSlider = () => {
     return desktopWidth.matches;
   };
 
-  let swiper = null;
+  let swiper;
 
   if (isValid()) {
     swiper = createSlider();

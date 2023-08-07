@@ -44,6 +44,16 @@
   }
 }
 
+@mixin focus-active {
+  @include focus {
+    @content;
+  }
+
+  @include active {
+    @content;
+  }
+}
+
 @keyframes opacity {
   from {
     opacity: 0;
