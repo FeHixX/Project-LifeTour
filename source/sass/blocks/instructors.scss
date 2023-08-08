@@ -43,23 +43,8 @@
 
 .instructors__slider {
   position: relative;
-  overflow: visible;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    inset: -30px;
-    right: calc(100% + 30px);
-    left: -50vw;
-    z-index: 2;
-    background-color: $color-default-white;
-  }
-
-  &::after {
-    right: -50vw;
-    left: calc(100% + 30px);
-  }
+  margin: -30px;
+  padding: 30px;
 }
 
 .instructors__list {
@@ -86,7 +71,7 @@
   }
 
   @include vp-1199 {
-    padding: 15px;
+    padding: 15px 15px 16px;
 
     img {
       width: 100%;

@@ -7,23 +7,15 @@ const addToggleMenu = () => {
   const nav = root.querySelector('.nav');
 
   const onDocumentKeydown = (evt) => {
-    if (evt.key === 'Escape') {
-      closeMenu();
-    }
+    return evt.key === 'Escape' ? closeMenu() : null;
   };
 
-  const onClickLink = (evt) => {
-    if (evt.target.matches(LINK_CLASS)) {
-      closeMenu();
-    }
+  const onLinkClick = (evt) => {
+    return evt.target.matches(LINK_CLASS) ? closeMenu() : null;
   };
 
   const isMenu = (evt) => {
-    if (evt.target.closest('.header') && evt.target.closest('.toggle') || evt.target.closest('.nav')) {
-      evt.preventDefault();
-    } else {
-      closeMenu();
-    }
+    return (evt.target.closest('.header') && evt.target.closest('.toggle') || evt.target.closest('.nav')) ? evt.preventDefault() : closeMenu();
   };
 
   const openMenu = () => {
@@ -31,8 +23,9 @@ const addToggleMenu = () => {
     toggle.classList.add(OPENED_CLASS);
     nav.classList.add(OPENED_CLASS);
     document.addEventListener('keydown', onDocumentKeydown);
-    nav.addEventListener('click', onClickLink);
+    nav.addEventListener('click', onLinkClick);
     document.addEventListener('click', isMenu);
+    window.scrollLock.disableScrolling();
   };
 
   const closeMenu = () => {
@@ -40,16 +33,13 @@ const addToggleMenu = () => {
     toggle.classList.remove(OPENED_CLASS);
     nav.classList.remove(OPENED_CLASS);
     document.removeEventListener('keydown', onDocumentKeydown);
-    nav.removeEventListener('click', onClickLink);
+    nav.removeEventListener('click', onLinkClick);
     document.removeEventListener('click', isMenu);
+    window.scrollLock.enableScrolling();
   };
 
   toggle.addEventListener('click', () => {
-    if (!toggle.classList.contains(OPENED_CLASS)) {
-      openMenu();
-    } else {
-      closeMenu();
-    }
+    return !toggle.classList.contains(OPENED_CLASS) ? openMenu() : closeMenu();
   });
 };
 

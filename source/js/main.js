@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import './utils/scroll-lock';
 
 import {addToggleMenu} from './modules/menu/toggle';
 import {addHeroSlider} from './modules/hero/slider';

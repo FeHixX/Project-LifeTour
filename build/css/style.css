@@ -2092,7 +2092,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 html {
@@ -2245,6 +2244,7 @@ button,
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  overflow: hidden;
 }
 
 .wrapper .header,
@@ -2812,7 +2812,7 @@ button,
 
 .nav__link {
   position: relative;
-  display: block;
+  display: inline-block;
   padding: 5px;
   line-height: 16px;
   color: inherit;
@@ -3602,23 +3602,8 @@ button,
 
 .instructors__slider {
   position: relative;
-  overflow: visible;
-}
-
-.instructors__slider::before,
-.instructors__slider::after {
-  content: "";
-  position: absolute;
-  inset: -30px;
-  right: calc(100% + 30px);
-  left: -50vw;
-  z-index: 2;
-  background-color: #ffffff;
-}
-
-.instructors__slider::after {
-  right: -50vw;
-  left: calc(100% + 30px);
+  margin: -30px;
+  padding: 30px;
 }
 
 .instructors__list {
@@ -4086,7 +4071,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 82px;
+  padding-top: 83px;
   padding-bottom: 102px;
   gap: 0 135px;
 }
@@ -4138,7 +4123,7 @@ button,
 
 .contacts__item svg {
   position: absolute;
-  top: 24%;
+  top: 12px;
   left: 0;
 }
 
@@ -4270,7 +4255,7 @@ button,
 
 .menu__link {
   position: relative;
-  display: block;
+  display: inline-block;
   padding: 5px;
   line-height: 16px;
   outline: none;
@@ -4705,7 +4690,7 @@ button,
   }
 
   .training__instructors {
-    margin: 0 0 44px;
+    margin: 0 0 43px;
   }
 
   .training__subtitle {
@@ -4794,7 +4779,7 @@ button,
   }
 
   .instructors__item {
-    padding: 15px;
+    padding: 15px 15px 16px;
   }
 
   .instructors__item img {
@@ -5096,7 +5081,7 @@ button,
   }
 
   .menu {
-    margin: 0 1px 7px 0;
+    margin: 0 1px 6px 0;
     gap: 5px 11px;
   }
 
@@ -5469,7 +5454,7 @@ button,
 
   .reviews__container {
     padding-top: 36px;
-    padding-bottom: 25px;
+    padding-bottom: 34px;
   }
 
   .reviews__top {
@@ -5486,13 +5471,17 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 100%;
-    padding: 20px 20px 18px;
-    gap: 16px 0;
+    padding: 20px;
+    gap: 19px 0;
   }
 
   .reviews__item img {
     width: 100%;
     height: auto;
+  }
+
+  .reviews__content {
+    padding: 0;
   }
 
   .reviews__body-text {
@@ -5505,7 +5494,7 @@ button,
   }
 
   .advantages__container {
-    padding-top: 25px;
+    padding-top: 34px;
     padding-bottom: 33px;
   }
 
@@ -5696,7 +5685,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin: 0 0 18px;
+    margin: 0 0 19px;
   }
 
   .footer__logo-link {
