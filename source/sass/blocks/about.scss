@@ -1,33 +1,29 @@
 .about {
   position: relative;
+}
 
-  > picture {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    z-index: -1;
-  }
+.about__background {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  z-index: -1;
 
-  > picture + picture {
+  &--right {
     top: -140px;
     right: 0;
     left: auto;
   }
 
   @include vp-1199 {
-    > picture {
-      bottom: 99px;
-    }
+    bottom: 99px;
 
-    > picture + picture {
+    &--right {
       display: none;
     }
   }
 
   @include vp-767 {
-    > picture {
-      top: 9px;
-    }
+    top: 9px;
   }
 }
 

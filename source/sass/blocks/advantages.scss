@@ -63,10 +63,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // to remove dynamic attribute styles in swiper
-    /* stylelint-disable declaration-no-important */
-    transform: translate3d(0, 0, 0) !important;
-    /* stylelint-enable declaration-no-important */
     gap: 30px;
   }
 
@@ -81,24 +77,20 @@
   align-items: center;
   width: 380px;
   height: auto;
+  margin-right: 30px;
   padding: 39px 20px;
   background-color: $color-default-white;
   border: 1px solid rgba($color-navy-blue, 0.1);
 
   @include vp-1199 {
-    // to remove dynamic attribute styles in swiper
-    /* stylelint-disable declaration-no-important */
-    width: calc(47% + 5px) !important;
-    margin-right: 0 !important;
-    /* stylelint-enable declaration-no-important */
+    width: calc(47% + 5px);
+    margin-right: 0;
     padding: 29px 20px;
     justify-self: center;
   }
 
   @include vp-767 {
-    // to remove dynamic attribute styles in swiper
-    /* stylelint-disable-next-line declaration-no-important */
-    width: 100% !important;
+    width: 100%;
     padding: 19px 10px;
   }
 }

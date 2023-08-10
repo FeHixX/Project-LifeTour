@@ -13,32 +13,17 @@
   }
 
   @include vp-767 {
-    display: grid;
+    margin: 0;
+    display: block;
     width: 100%;
-    gap: 5px 20px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    column-count: 2;
   }
 }
 
 .menu__item {
-  &--tours {
-    order: -3;
-  }
-
-  &--training {
-    order: -2;
-  }
-
-  &--about {
-    order: -1;
-  }
-
   @include vp-767 {
-    &--tours,
-    &--training,
-    &--about {
-      order: 0;
-    }
+    margin: 0 0 5px;
   }
 }
 

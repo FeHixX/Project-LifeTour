@@ -2855,6 +2855,10 @@ button,
   pointer-events: none;
 }
 
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 0;
+}
+
 .hero {
   color: #ffffff;
 }
@@ -2982,7 +2986,7 @@ button,
   position: relative;
 }
 
-.hero__slider > .hero__pagination {
+.hero__slider .hero__pagination {
   position: absolute;
   bottom: 17px;
   z-index: 1;
@@ -2995,10 +2999,10 @@ button,
   gap: 0 15px;
 }
 
-.hero__slider > .hero__pagination .hero__pagination-button {
+.hero__slider .hero__pagination-button {
   width: 10px;
   height: 10px;
-  margin: 0;
+  margin: swiper-pagination-bullet-horizontal-gap;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #ffffff;
   outline: none;
@@ -3007,21 +3011,21 @@ button,
   transition: all 0.3s ease;
 }
 
-.hero__slider > .hero__pagination .hero__pagination-button:hover:not([disabled]) {
+.hero__slider .hero__pagination-button:hover:not([disabled]) {
   background-color: #ffffff;
   opacity: 0.4;
 }
 
-.hero__slider > .hero__pagination .hero__pagination-button:focus-visible:not([disabled]) {
+.hero__slider .hero__pagination-button:focus-visible:not([disabled]) {
   background-color: #ffffff;
   opacity: 0.4;
 }
 
-.hero__slider > .hero__pagination .hero__pagination-button:active:not([disabled]) {
+.hero__slider .hero__pagination-button:active:not([disabled]) {
   opacity: 0.7;
 }
 
-.hero__slider > .hero__pagination .swiper-pagination-bullet-active {
+.hero__slider .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
 
@@ -3263,14 +3267,14 @@ button,
   position: relative;
 }
 
-.tours > picture {
+.tours__background {
   position: absolute;
   top: -18px;
   right: 0;
   z-index: -1;
 }
 
-.tours > picture + picture {
+.tours__background--left {
   top: auto;
   left: 0;
   bottom: -48px;
@@ -3684,14 +3688,14 @@ button,
   position: relative;
 }
 
-.about > picture {
+.about__background {
   position: absolute;
   bottom: -8px;
   left: 0;
   z-index: -1;
 }
 
-.about > picture + picture {
+.about__background--right {
   top: -140px;
   right: 0;
   left: auto;
@@ -3890,6 +3894,7 @@ button,
   align-items: center;
   width: 380px;
   height: auto;
+  margin-right: 30px;
   padding: 39px 20px;
   background-color: #ffffff;
   border: 1px solid rgba(2, 102, 193, 0.1);
@@ -4235,24 +4240,6 @@ button,
   gap: 5px 23px;
 }
 
-.menu__item--tours {
-  -webkit-box-ordinal-group: -2;
-  -ms-flex-order: -3;
-  order: -3;
-}
-
-.menu__item--training {
-  -webkit-box-ordinal-group: -1;
-  -ms-flex-order: -2;
-  order: -2;
-}
-
-.menu__item--about {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
 .menu__link {
   position: relative;
   display: inline-block;
@@ -4586,7 +4573,7 @@ button,
     margin: 19px 0 0;
   }
 
-  .hero__slider > .hero__pagination {
+  .hero__slider .hero__pagination {
     bottom: 0;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -4603,11 +4590,11 @@ button,
     height: 300px;
   }
 
-  .tours > picture {
+  .tours__background {
     top: -95px;
   }
 
-  .tours > picture + picture {
+  .tours__background--left {
     display: none;
   }
 
@@ -4803,11 +4790,11 @@ button,
     line-height: 18px;
   }
 
-  .about > picture {
+  .about__background {
     bottom: 99px;
   }
 
-  .about > picture + picture {
+  .about__background--right {
     display: none;
   }
 
@@ -4895,18 +4882,12 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    /* stylelint-disable declaration-no-important */
-    -webkit-transform: translate3d(0, 0, 0) !important;
-    transform: translate3d(0, 0, 0) !important;
-    /* stylelint-enable declaration-no-important */
     gap: 30px;
   }
 
   .advantages__item {
-    /* stylelint-disable declaration-no-important */
-    width: calc(47% + 5px) !important;
-    margin-right: 0 !important;
-    /* stylelint-enable declaration-no-important */
+    width: calc(47% + 5px);
+    margin-right: 0;
     padding: 29px 20px;
     -ms-grid-column-align: center;
     justify-self: center;
@@ -5218,16 +5199,16 @@ button,
     display: none;
   }
 
-  .hero__slider > .hero__pagination {
+  .hero__slider .hero__pagination {
     gap: 0 12px;
   }
 
-  .hero__slider > .hero__pagination .hero__pagination-button {
+  .hero__slider .hero__pagination-button {
     width: 8px;
     height: 8px;
   }
 
-  .tours > picture {
+  .tours__background {
     top: 137px;
   }
 
@@ -5423,7 +5404,7 @@ button,
     margin-right: 12px;
   }
 
-  .about > picture {
+  .about__background {
     top: 9px;
   }
 
@@ -5507,8 +5488,7 @@ button,
   }
 
   .advantages__item {
-    /* stylelint-disable-next-line declaration-no-important */
-    width: 100% !important;
+    width: 100%;
     padding: 19px 10px;
   }
 
@@ -5585,7 +5565,7 @@ button,
     height: 103px;
   }
 
-  .gallery__item:nth-child(2n) picture + picture {
+  .gallery__item:nth-child(2n) .gallery__picture-bottom {
     width: 172px;
     height: 153px;
   }
@@ -5685,7 +5665,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin: 0 0 19px;
+    margin: 0 0 20px;
   }
 
   .footer__logo-link {
@@ -5710,20 +5690,17 @@ button,
   }
 
   .menu {
-    display: -ms-grid;
-    display: grid;
+    margin: 0;
+    display: block;
     width: 100%;
-    gap: 5px 20px;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 
-  .menu__item--tours,
-  .menu__item--training,
-  .menu__item--about {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
+  .menu__item {
+    margin: 0 0 5px;
   }
 }
 

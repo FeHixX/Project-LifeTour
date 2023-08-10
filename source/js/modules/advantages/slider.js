@@ -6,8 +6,7 @@ const createSlider = () => {
     return new Swiper('.advantages__slider', {
       allowTouchMove: isMobile(),
       loop: true,
-      slidesPerView: 5,
-      spaceBetween: 30,
+      slidesPerView: 'auto',
       navigation: {
         nextEl: '.advantages__next',
         prevEl: '.advantages__prev',
@@ -18,12 +17,12 @@ const createSlider = () => {
 };
 
 const addAdvantagesSlider = () => {
+  let swiper = null;
+
   const isValid = () => {
     const desktopWidth = window.matchMedia('(min-width: 1200px)');
     return desktopWidth.matches;
   };
-
-  let swiper;
 
   if (isValid()) {
     swiper = createSlider();
@@ -31,7 +30,9 @@ const addAdvantagesSlider = () => {
 
   window.addEventListener('resize', () => {
     if (isValid()) {
-      swiper = createSlider();
+      if (!swiper) {
+        swiper = createSlider();
+      }
     } else {
       if (swiper) {
         swiper.destroy();

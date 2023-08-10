@@ -511,17 +511,17 @@
               </svg>
             </a>
           </div>
-          <picture>
+          <picture class="tours__background tours__background--left" aria-hidden="true">
+            <source type="image/webp" srcset="./img/clouds/clouds-tours@1x.webp, ./img/clouds/clouds-tours@2x.webp 2x" width="418" height="279">
+            <img src="./img/clouds/clouds-tours@1x.png" srcset="./img/clouds/clouds-tours@2x.png 2x" width="418" height="279" alt="Облако." loading="lazy">
+          </picture>
+          <picture class="tours__background">
             <source type="image/webp" media="(max-width: 767px)" srcset="./img/clouds/clouds-mountain-tours-mobile@1x.webp, ./img/clouds/clouds-mountain-tours-mobile@2x.webp 2x" width="176" height="595">
             <source type="image/webp" media="(max-width: 1199px)" srcset="./img/clouds/clouds-mountain-tours-tablet@1x.webp, ./img/clouds/clouds-mountain-tours-tablet@2x.webp 2x" width="294" height="1364">
             <source type="image/webp" srcset="./img/clouds/clouds-mountain-tours-desktop@1x.webp, ./img/clouds/clouds-mountain-tours-desktop@2x.webp 2x" width="602" height="1364">
             <source media="(max-width: 767px)" srcset="./img/clouds/clouds-mountain-tours-mobile@1x.png, ./img/clouds/clouds-mountain-tours-mobile@2x.png 2x" width="176" height="595">
             <source media="(max-width: 1199px)" srcset="./img/clouds/clouds-mountain-tours-tablet@1x.png, ./img/clouds/clouds-mountain-tours-tablet@2x.png 2x" width="294" height="1364">
             <img src="./img/clouds/clouds-mountain-tours-desktop@1x.png" srcset="./img/clouds/clouds-mountain-tours-desktop@2x.png 2x" width="602" height="1364" alt="Фон: гора с облаками в небе." loading="lazy">
-          </picture>
-          <picture aria-hidden="true">
-            <source type="image/webp" srcset="./img/clouds/clouds-tours@1x.webp, ./img/clouds/clouds-tours@2x.webp 2x" width="418" height="279">
-            <img src="./img/clouds/clouds-tours@1x.png" srcset="./img/clouds/clouds-tours@2x.png 2x" width="418" height="279" alt="Облако." loading="lazy">
           </picture>
         </section>
         <section class="training" id="training">
@@ -697,7 +697,7 @@
               </div>
             </div>
           </div>
-          <picture>
+          <picture class="about__background">
             <source type="image/webp" media="(max-width: 767px)" srcset="./img/about/background-mobile@1x.webp, ./img/about/background-mobile@2x.webp 2x" width="320" height="402">
             <source type="image/webp" media="(max-width: 1199px)" srcset="./img/about/background-tablet@1x.webp, ./img/about/background-tablet@2x.webp 2x" width="475" height="402">
             <source type="image/webp" srcset="./img/about/background-desktop@1x.webp, ./img/about/background-desktop@2x.webp 2x" width="808" height="474">
@@ -705,7 +705,7 @@
             <source media="(max-width: 1199px)" srcset="./img/about/background-tablet@1x.jpg, ./img/about/background-tablet@2x.jpg 2x" width="475" height="402">
             <img src="./img/about/background-desktop@1x.jpg" srcset="./img/about/background-desktop@2x.jpg 2x" width="808" height="474" alt="Фон: группа людей, идущих в поход по скалистому холму." loading="lazy">
           </picture>
-          <picture aria-hidden="true">
+          <picture class="about__background about__background--right" aria-hidden="true">
             <source type="image/webp" srcset="./img/clouds/clouds-about@1x.webp, ./img/clouds/clouds-about@2x.webp 2x" width="618" height="280">
             <img src="./img/clouds/clouds-about@1x.png" srcset="./img/clouds/clouds-about@2x.png 2x" width="618" height="280" alt="Облако." loading="lazy">
           </picture>
@@ -930,7 +930,7 @@
                     <source type="image/webp" srcset="./img/gallery/fire@1x.webp, ./img/gallery/fire@2x.webp 2x" width="298" height="179">
                     <img src="./img/gallery/fire@1x.jpg" srcset="./img/gallery/fire@2x.jpg 2x" width="298" height="179" alt="Группа людей вокруг костра." loading="lazy">
                   </picture>
-                  <picture>
+                  <picture class="gallery__picture-bottom">
                     <source type="image/webp" srcset="./img/gallery/compass@1x.webp, ./img/gallery/compass@2x.webp 2x" width="298" height="265">
                     <img src="./img/gallery/compass@1x.jpg" srcset="./img/gallery/compass@2x.jpg 2x" width="298" height="265" alt="Рука, держащая компас перед горой." loading="lazy">
                   </picture>
@@ -946,7 +946,7 @@
                     <source type="image/webp" srcset="./img/gallery/trail@1x.webp, ./img/gallery/trail@2x.webp 2x" width="298" height="179">
                     <img src="./img/gallery/trail@1x.jpg" srcset="./img/gallery/trail@2x.jpg 2x" width="298" height="179" alt="Группа людей, идущих по заснеженной тропинке." loading="lazy">
                   </picture>
-                  <picture>
+                  <picture class="gallery__picture-bottom">
                     <source type="image/webp" srcset="./img/gallery/tent@1x.webp, ./img/gallery/tent@2x.webp 2x" width="298" height="265">
                     <img src="./img/gallery/tent@1x.jpg" srcset="./img/gallery/tent@2x.jpg 2x" width="298" height="265" alt="Голубая палатка под звездным небом." loading="lazy">
                   </picture>
@@ -962,7 +962,7 @@
                     <source type="image/webp" srcset="./img/gallery/fire@1x.webp, ./img/gallery/fire@2x.webp 2x" width="298" height="179">
                     <img src="./img/gallery/fire@1x.jpg" srcset="./img/gallery/fire@2x.jpg 2x" width="298" height="179" alt="Группа людей вокруг костра." loading="lazy">
                   </picture>
-                  <picture>
+                  <picture class="gallery__picture-bottom">
                     <source type="image/webp" srcset="./img/gallery/compass@1x.webp, ./img/gallery/compass@2x.webp 2x" width="298" height="265">
                     <img src="./img/gallery/compass@1x.jpg" srcset="./img/gallery/compass@2x.jpg 2x" width="298" height="265" alt="Рука, держащая компас перед горой." loading="lazy">
                   </picture>
@@ -1063,20 +1063,20 @@
               </svg>
             </a>
             <ul class="footer__list menu">
-              <li class="menu__item menu__item--tours">
+              <li class="menu__item">
                 <a class="menu__link" href="#tours">Туры</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#training">Обучение</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">О нас</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#reviews">Отзывы</a>
               </li>
-              <li class="menu__item menu__item--training">
-                <a class="menu__link" href="#training">Обучение</a>
-              </li>
               <li class="menu__item">
                 <a class="menu__link" href="#gallery">Фотографии</a>
-              </li>
-              <li class="menu__item menu__item--about">
-                <a class="menu__link" href="#about">О нас</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#contacts">Контакты</a>

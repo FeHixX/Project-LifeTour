@@ -1,33 +1,29 @@
 .tours {
   position: relative;
+}
 
-  > picture {
-    position: absolute;
-    top: -18px;
-    right: 0;
-    z-index: -1;
-  }
+.tours__background {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  z-index: -1;
 
-  > picture + picture {
+  &--left {
     top: auto;
     left: 0;
     bottom: -48px;
   }
 
   @include vp-1199 {
-    > picture {
-      top: -95px;
-    }
+    top: -95px;
 
-    > picture + picture {
+    &--left {
       display: none;
     }
   }
 
   @include vp-767 {
-    > picture {
-      top: 137px;
-    }
+    top: 137px;
   }
 }
 
