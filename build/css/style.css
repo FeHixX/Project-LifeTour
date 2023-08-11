@@ -4462,7 +4462,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     max-width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
     gap: 16px 0;
   }
 
