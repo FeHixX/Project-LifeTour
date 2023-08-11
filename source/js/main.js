@@ -12,6 +12,7 @@ import {addReviewsSlider} from './modules/reviews/slider';
 import {addAdvantagesSlider} from './modules/advantages/slider';
 import {addGallerySlider} from './modules/gallery/slider';
 import {addContactsMap} from './modules/contacts/map';
+import {getHeight} from './modules/hero/indent';
 
 // ---------------------------------
 
@@ -31,6 +32,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    getHeight();
 
     addToggleMenu();
     addHeroSlider();
