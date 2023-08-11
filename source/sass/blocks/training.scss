@@ -104,16 +104,14 @@
 
 .training__process-body {
   position: relative;
-  display: grid;
-  align-items: center;
   margin: 0 0 41px;
-  gap: 0 15px;
-  grid-template-columns: 25px auto;
+  padding: 0 0 0 40px;
 
   &::before {
     content: "";
     position: absolute;
     bottom: -41px;
+    left: 0;
     width: 14px;
     height: 14px;
     background-color: $color-navy-blue;
@@ -130,6 +128,12 @@
     background-color: rgba($color-navy-blue, 0.1);
   }
 
+  svg {
+    position: absolute;
+    top: 11px;
+    left: 0;
+  }
+
   &--map {
     &::after {
       left: -50vw;
@@ -144,9 +148,10 @@
 
   @include vp-1199 {
     margin: 0;
+    padding: 0 0 0 31px;
 
     svg {
-      margin: 0 0 3px;
+      top: 8px;
     }
 
     &--map {
@@ -206,7 +211,7 @@
     gap: 0 6px;
 
     &::before {
-      top: 50%;
+      top: 18px;
       left: -33px;
       width: 13px;
       height: 13px;
@@ -225,7 +230,6 @@
     svg {
       width: 19px;
       height: 19px;
-      margin: 0 0 3px;
     }
 
     &--pine-tree {
@@ -237,11 +241,12 @@
     }
 
     &:first-child::after {
-      top: 50%;
+      top: 18px;
     }
 
     &:last-child::after {
-      bottom: 50%;
+      top: -12px;
+      bottom: calc(100% - 18px);
     }
   }
 }
