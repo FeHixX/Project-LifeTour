@@ -229,16 +229,14 @@
 
 .hero__slider .hero__pagination {
   position: absolute;
-  right: calc(50% - 600px);
+  right: 0;
   bottom: 97px;
-  left: auto;
   z-index: 1;
   display: flex;
   justify-content: end;
   gap: 0 15px;
 
   @include vp-1199 {
-    right: auto;
     bottom: 90px;
     justify-content: center;
   }

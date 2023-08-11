@@ -2958,9 +2958,8 @@ button,
 
 .hero__slider .hero__pagination {
   position: absolute;
-  right: calc(50% - 600px);
+  right: 0;
   bottom: 97px;
-  left: auto;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4569,7 +4568,6 @@ button,
   }
 
   .hero__slider .hero__pagination {
-    right: auto;
     bottom: 90px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;

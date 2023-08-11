@@ -9,9 +9,9 @@ const getHeight = () => {
       content.style.paddingTop = `${header.offsetHeight}px`;
     };
 
-    const target = new MutationObserver(setHeight);
+    const observer = new MutationObserver(setHeight);
 
-    target.observe(header, {
+    observer.observe(header, {
       childList: true,
       subtree: true,
     });
