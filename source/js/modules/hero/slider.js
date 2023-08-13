@@ -5,8 +5,6 @@ const addHeroSlider = () => {
   if (document.querySelector('.hero__slider')) {
     return new Swiper('.hero__slider', {
       allowTouchMove: isMobile(),
-      cssMode: true,
-      loop: true,
       pagination: {
         el: '.hero__pagination',
         clickable: true,

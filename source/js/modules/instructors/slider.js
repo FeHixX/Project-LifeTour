@@ -3,7 +3,7 @@ import {isMobile} from '../../utils/is-mobile';
 
 const addInstructorsSlider = () => {
   if (document.querySelector('.instructors__slider')) {
-    const swiper = new Swiper('.instructors__slider', {
+    return new Swiper('.instructors__slider', {
       allowTouchMove: isMobile(),
       spaceBetween: 30,
       breakpoints: {
@@ -22,7 +22,6 @@ const addInstructorsSlider = () => {
         prevEl: '.instructors__prev',
       },
     });
-    return swiper;
   }
   return null;
 };

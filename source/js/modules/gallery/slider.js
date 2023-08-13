@@ -3,7 +3,7 @@ import {isMobile} from '../../utils/is-mobile';
 
 const addGallerySlider = () => {
   if (document.querySelector('.gallery__slider')) {
-    const swiper = new Swiper('.gallery__slider', {
+    return new Swiper('.gallery__slider', {
       allowTouchMove: isMobile(),
       slidesPerView: 'auto',
       navigation: {
@@ -11,7 +11,6 @@ const addGallerySlider = () => {
         prevEl: '.gallery__prev',
       },
     });
-    return swiper;
   }
   return null;
 };

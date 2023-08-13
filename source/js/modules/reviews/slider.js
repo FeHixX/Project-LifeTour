@@ -3,7 +3,7 @@ import {isMobile} from '../../utils/is-mobile';
 
 const addReviewsSlider = () => {
   if (document.querySelector('.reviews__slider')) {
-    const swiper = new Swiper('.reviews__slider', {
+    return new Swiper('.reviews__slider', {
       allowTouchMove: isMobile(),
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -12,7 +12,6 @@ const addReviewsSlider = () => {
         prevEl: '.reviews__prev',
       },
     });
-    return swiper;
   }
   return null;
 };
