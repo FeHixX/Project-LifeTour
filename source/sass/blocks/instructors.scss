@@ -30,6 +30,7 @@
 }
 
 .instructors__arrows {
+  z-index: 2;
   margin: -7px 2px 0 0;
 
   @include vp-1199 {

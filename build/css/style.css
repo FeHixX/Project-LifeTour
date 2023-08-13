@@ -2605,7 +2605,7 @@ button,
 }
 
 .header {
-  background-color: #89a6ca;
+  z-index: 2;
 }
 
 .header__container {
@@ -3572,6 +3572,7 @@ button,
 }
 
 .instructors__arrows {
+  z-index: 2;
   margin: -7px 2px 0 0;
 }
 

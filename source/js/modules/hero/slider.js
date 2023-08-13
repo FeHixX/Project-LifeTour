@@ -3,15 +3,10 @@ import {isMobile} from '../../utils/is-mobile';
 
 const addHeroSlider = () => {
   if (document.querySelector('.hero__slider')) {
-    const classSliders = ['first', 'second', 'third'];
-
-    const swiper = new Swiper('.hero__slider', {
+    return new Swiper('.hero__slider', {
       allowTouchMove: isMobile(),
-      speed: 300,
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true,
-      },
+      cssMode: true,
+      loop: true,
       pagination: {
         el: '.hero__pagination',
         clickable: true,
@@ -20,12 +15,6 @@ const addHeroSlider = () => {
         },
       },
     });
-
-    swiper.on('transitionStart', function (e) {
-      const header = document.querySelector('header');
-      header.className = `header header--${classSliders[e.realIndex]}-slide`;
-    });
-    return swiper;
   }
   return null;
 };

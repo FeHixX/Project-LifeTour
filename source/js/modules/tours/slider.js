@@ -8,7 +8,7 @@ const addToursSlider = () => {
       breakpoints: {
         0: {
           slidesPerView: 1,
-          spaceBetween: 5,
+          spaceBetween: 8,
         },
         768: {
           slidesPerView: 2,
