@@ -8,7 +8,7 @@
   &::before {
     content: attr(data-shadow);
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
     width: max-content;
     font-size: 55px;
@@ -21,6 +21,7 @@
     line-height: 25px;
 
     &::before {
+      bottom: -2px;
       font-size: 40px;
       line-height: 40px;
     }
@@ -31,7 +32,7 @@
     line-height: 22px;
 
     &::before {
-      top: 0;
+      top: -4px;
       bottom: auto;
       font-size: 26px;
       line-height: 26px;

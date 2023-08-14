@@ -85,6 +85,7 @@
 
 .training__process-list {
   display: grid;
+  align-items: end;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -148,7 +149,7 @@
 
   @include vp-1199 {
     margin: 0;
-    padding: 0 0 0 31px;
+    padding: 0 0 0 39px;
 
     svg {
       top: 8px;
@@ -204,10 +205,15 @@
         height: 1px;
       }
     }
+
+    &--bottom {
+      align-self: start;
+    }
   }
 
   @include vp-767 {
     margin: 0 0 0 37px;
+    padding: 0 0 0 31px;
     gap: 0 6px;
 
     &::before {
@@ -238,6 +244,10 @@
       &::after {
         display: block;
       }
+    }
+
+    &--bottom {
+      align-items: stretch;
     }
 
     &:first-child::after {

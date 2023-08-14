@@ -7,14 +7,17 @@ const addToursSlider = () => {
       allowTouchMove: isMobile(),
       breakpoints: {
         0: {
-          slidesPerView: 1,
-          spaceBetween: 8,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          spaceBetween: 100,
         },
         768: {
+          centeredSlides: false,
           slidesPerView: 2,
           spaceBetween: 18,
         },
         1200: {
+          centeredSlides: false,
           slidesPerView: 3,
           spaceBetween: 30,
         },
